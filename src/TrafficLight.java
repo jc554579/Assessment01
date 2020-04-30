@@ -21,7 +21,7 @@ public class TrafficLight {
      * Randomly generate initial state
      */
     public void operate() {
-        double probability =(new Random()).nextDouble();
+        double probability = (new Random()).nextDouble();
         this.setState(probability > CHANGE_GREEN ? GREEN : RED);
     }
 
@@ -29,8 +29,8 @@ public class TrafficLight {
         System.out.printf(this.toString());
     }
 
-    public void chageState(){
-        if(this.state.equals("green")) this.state = "red";
+    public void chageState() {
+        if (this.state.equals("green")) this.state = "red";
         else this.state = "green";
     }
 
